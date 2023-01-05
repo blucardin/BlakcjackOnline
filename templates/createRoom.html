@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Room Code: {{ room_id }}</title>
+</head>
+<body>
+    <h1>Room Code: {{ room_id }}</h1>
+    {# show the join link and the room link#}
+    <a href="{{ url_for('room', room_id=room_id) }}">Room Link</a>
+    <a href="{{ url_for('join') }}">Join Link</a>
+    {# create a script that uses socket.io to get new player names as they join and display them#}
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Join A Room</title>
+</head>
+<body>
+    {% if invalid == true%}
+        <h1>Invalid Code</h1>
+        <p>Sorry, the code you entered is invalid. Please try again.</p>
+    {% endif %}
+
+    <form action={{ url_for('room') }} method="get">
+        <label for="room_id">Enter Room ID:</label>
+        <input type="text" name="room_id" id="room_id">
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
